@@ -5,10 +5,12 @@ import Header from './Components/Header/Header';
 import IntroSection from './Components/IntroSection';
 import TabsSection from './Components/TabsSection';
 import TeachingSection from './Components/TeachingSection';
+import EffectSection from './Components/EffectSection'
 
 export default function App() {
-	const [tab, setTab] = useState('feedback');
+	const [tab, setTab] = useState('effect');
 
+	
 	return (
 		<>
 			<Header />
@@ -24,6 +26,7 @@ export default function App() {
 				)}
 
 				{tab === 'feedback' && <FeedbackSection />}
+				{tab === 'effect' && <EffectSection/>}
 			</main>
 		</>
 	);
